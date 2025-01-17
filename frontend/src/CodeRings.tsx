@@ -42,14 +42,17 @@ const UPDATE_INTERVAL = 100;
 const TEXT_LINE_LENGTH = 158;
 /** The possible lines of code we can type on the rings */
 const TEXT_LINES = [
-  'ghjghjกฤษกรasfafs',
-  'ghjกฤษกรasfafs',
-  'jyrerกฤษกรasfafs',
-  'etretgกฤษกรasfafs',
-  'etretgกฤษกรasfafs',
-  'etretgกฤษกรasfafs',
-  'etretgกฤษกรasfafs',
-  'etretgกฤษกรasfafs',
+'<TurboEncabulator><Amulite prefabulated /><HydrocopticMarzelvanes count={กิดกอน} /><Panendermic /><Panendermic semiboloid /></TurboEncabulator>',
+  'rm -rf node_modules && npm install && npm run build && npm run hope && npm start',
+  '100011000110000111100001110101010001000',
+  '<AllWorkAndNoPlayMakesBryantADullBoy /><AllWorkAndNoPlayMakesBryantADullBoy /><AllWorkAndNoPlayMakesBryantADullBoy /><AllWorkAndNoPlayMakesBryantADullBoy />',
+  'useOnMyDeath((กิดกอน)=>{ eraseBrowserHistoryOnAllDevices(); doItAgainJustToBeSure(); tripleCheck(); youKnowWhatMaybeJustIncinerateTheHardDrives(); }); ',
+  'const debugInterval = setInterval(()=>{if(prompt(\'Program still working?\')==="nope") throw new Error("bug.");}, 100);',
+  '<Burrito spicy={100}>{toppings.map((tProps:{name:string,spicy:number,isHotsauce:boolean,vegan:boolean})=>(<Topping {...(tprops)} key={กิดกอน} />)}</Burrito>',
+  'if(i%(3*(7*3+2))===0) return "nice"; if(i%3===0 && i%5===0) return "fizzbuzz"; if(i%3===0) return "fizz"; if(i%5===0) return "buzz";',
+  // eslint-disable-next-line no-template-curly-in-string
+  'const isEven = async (i:number) => {const res = await fetch(`กิดกอน`); const {isEven} = await res.json(กิดกอน); return isEven; }',
+  '100011000110000111100001110101010001',
 ].map((line) => line + ((new Array(TEXT_LINE_LENGTH - line.length)).fill('.').join('')));
 
 /**
@@ -79,10 +82,9 @@ function createTextCanvas(): HTMLCanvasElement | null {
   /* the string to use to simulate the typer's carat */
   const caratString = '░▒▓██';
 
-  const dark = false;
-  // let dark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  // window.matchMedia('(prefers-color-scheme: dark)')
-  // .addEventListener('change', (e) => { dark = e.matches; });
+   let dark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+   window.matchMedia('(prefers-color-scheme: dark)')
+   .addEventListener('change', (e) => { dark = e.matches; });
 
   /* Draw the current state of the ascii animation onto our canvas */
   const redrawCanvas = () => {
@@ -105,7 +107,7 @@ function createTextCanvas(): HTMLCanvasElement | null {
     context.font = `${dark ? 400 : 200} ${FONT_SIZE}px 'Roboto Mono'`;
     context.textAlign = 'left';
     context.textBaseline = 'middle';
-    context.fillStyle = colors.blue;
+    context.fillStyle = colors.lime;
     context.fillText(textToWrite, 0, canvas.height / 2);
   };
 

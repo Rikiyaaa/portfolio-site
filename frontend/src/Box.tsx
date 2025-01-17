@@ -21,7 +21,7 @@ export function Box({ position, speed = 0.02 }: { position: Vector3; speed?: num
       position={position}
     >
       <boxGeometry args={[50, 50, 50]} />
-      <meshStandardMaterial color="blue" />
+      <meshStandardMaterial color="red" />
     </mesh>
   );
 }

@@ -209,5 +209,7 @@ export const ProjectBody = ({ project }: { project: Project; }) => useMemo(() =>
 
 export const ProjectCTA = ({ slug }:{slug:string}) => (
   <div className="mb-[5em]">
+    <H2>Questions?</H2>
+    
   </div>
 );

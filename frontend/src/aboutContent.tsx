@@ -4,15 +4,15 @@ import jpImage from '../public/images/jp.jpg';
 /* eslint-disable no-multiple-empty-lines */
 /* eslint-disable max-len */
 export const aboutContent = {
-  intro: ["I'm Bryant! (he/him)", 'I build web experiences'],
+  intro: ["I'm Kitsakorn! (he/him)", 'Thank you for visiting this website.'],
   mission: [
-    'I am a freelance dev who helps awesome designers (like you) build their wildest dreams.',
-    'Together, let\'s create something that stands out––and has your users saying, "woah."',
+    'ยินดีต้อนรับ! ผมชื่อ"นิว"และนี่คือพื้นที่ที่ผมใช้แสดงความคิดสร้างสรรค์และแรงบันดาลใจ ถ้ามีอะไรอยากพูดคุย หรือกำลังมองหาใครสักคนที่จะช่วยใน การออกแบบ, การเขียนโค้ด ผมยินดีรับฟัง!',
+    'สามารถติดต่อผมได้ที่ "เเก้ว" ตรงหน้าเเรกเลย"',
   ],
   testimonials: [
     {
       quote:
-        "Bryant's kickass work is complemented by his infectious energy and passion for creating original, exciting work. He is a true creative partner––always bringing new ideas to the table.",
+        "none",
       shortName: 'Stef',
       name: 'Stephanie Jung',
       headshot: stefImage, // Ensure stef.jpg exists
@@ -20,18 +20,18 @@ export const aboutContent = {
     },
     {
       quote:
-        "Bryant's collaborative mindset and aptitude to explore ideas well beyond the minimum viable product make him an invaluable partner.",
+        "none",
       name: 'JP Ramirez',
       shortName: 'JP',
       title: [
-        'Design Manager, Brand Design Strategy at Intuit',
-        'Director, Studio Ramírez',
+        'none',
+        'none',
       ],
       headshot: jpImage, // Ensure jp.jpg exists
     },
     {
       quote:
-        "Bryant's building enables award-winning projects––including FWA Site Of The Day, Webby, 2x Awwwards Honorable Mention, CSSDA Special Kudos, CSSDA Best UI/UX/Innovation, 4x STA100, Type Director's Club, Webby For Good... & more.",
+        "none",
       name: 'The award people',
       shortName: 'Awards',
       headshot: '/images/star-icon.svg', // Ensure star-icon.svg exists
@@ -39,34 +39,22 @@ export const aboutContent = {
   ],
   skills: [
     `
-      9 years working with
-      best-in-class designers building award-winning projects
+      none
     `,
     `
-      strong command of design systems. excellent
-      at interpreting mockups in any form (adobe, figma,
-      whatev) and working with minimal OR maximal direction
+      none
     `,
     `
-      exceptional at visual
-      styling and attention to
-      detail.  whatever tool it
-      takes: CSS, SCSS/PostCSS,
-      Tailwind, animation,
-      2D & 3D rendering...
+      none
     `,
     `
-      expert communication &
-      project management.
-      leading up, down, and laterally. transforming chaos into launches
+      none
     `,
     `
-      full stack & at the cutting edge. this site is built with React/NextJS,
-      Typescript, Sanity, Three.js/R3F, GLSL, and a laundry list more
+      none
     `,
     `
-      always accessible, functional, responsive, compatible,
-      performant and search engine optimized
+      none
     `,
   ],
 };

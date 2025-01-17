@@ -43,14 +43,14 @@ export const Slides = ({
     const buttonDelay = text2Delay + 23 * TIME_PER_CHAR + 300;
     return (
       // อยากได้ font ในเครื่อง
-      <div className="p-[1em] font-mono text-white text-[2em]">
+      <div className="p-[1em] font-mono text-[#00e3ff] text-[2em]">
         <Typewriter delay={text1Delay} hideCaratAtEnd>
           {aboutContent.intro[0]}
         </Typewriter>
         <Typewriter delay={text2Delay}>
           {aboutContent.intro[1]}
         </Typewriter>
-        <div className="grid place-items-center mt-[2em]">
+        <div className="grid place-items-center mt-[2em] ">
           <TerminalButton
             onClick={() => {
               setScene('about');
@@ -58,10 +58,10 @@ export const Slides = ({
               setSlide('mission');
             }}
             delay={buttonDelay}
-            className="text-[max(1.5em,16px)]"
+            className="text-[max(1.3em,13px)] text-[#00e3ff] font-thai "
             tabIndex={scene === 'menu' ? 0 : -1}
           >
-            ABOUT_BRYANT
+            เกี่ยวกับฉัน
           </TerminalButton>
         </div>
       </div>
@@ -73,38 +73,32 @@ export const Slides = ({
       {(slide === 'mission' || slide === 'testimonials' || slide === 'skills') && (
         <div
           className={`
+             text-[1em]
           grid h-full
           pointer-events-none
           absolute top-0 left-0 w-full
           ${breakpoints.about ? 'grid-cols-[65%_1fr]' : 'grid-rows-[max-content_1fr]'}
         `}
         >
-          <TextWindow
-            title="BRYANT_SMITH.exe"
-            className={`
-            relative self-baseline
-            ${breakpoints.about ? '' : `
-              w-[90%] max-w-[30em] justify-self-start
-            `}
-            transition-transform duration-[1s]
-            ${slide === 'mission' ? '' : 'translate-x-[-80%] translate-y-[-40%]'}
-          `}
-            delay={1000}
-            topColor="violet"
-            wrapperClassName="p-[1em]"
-            texts={aboutContent.mission}
-            // icon="/images/computer-icon.svg"
-            // icon="/images/alert-icon.svg"
-            buttonColor="pink"
-            buttonText="tell me more!"
-            onClick={() => {
-              setSlide('testimonials');
-            }}
-            disabled={slide !== 'mission'}
-          />
+                    <TextWindow
+  title="KITSAKORN.exe"
+  className={`
+    relative self-baseline
+    ${breakpoints.about ? '' : 'w-[90%] max-w-[30em] justify-self-start'}
+    transition-transform duration-[1s]
+    ${slide === 'mission' ? '' : 'translate-x-[-80%] translate-y-[-40%]'}
+  `}
+  delay={1000}
+  topColor="violet"
+  wrapperClassName="p-[1em]"
+  texts={aboutContent.mission}
+  buttonColor="pink"
+  buttonText="HEllo_WOrld!"
+  disabled={slide !== 'mission'}
+/>
           <ImageWindow
             delay={300}
-            title="SELF_CONCEPT.jpg"
+            title="PROFILE_ME.jpg"
             positions={['center']}
             topColor="yellow"
             className={`
@@ -119,8 +113,8 @@ export const Slides = ({
             transition-transform duration-[1s]
             ${slide === 'mission' ? '' : 'translate-x-[20%] translate-y-[70%]'}
           `}
-            srcs={[selfPortraitImage]}
-            alts={['Crayon illustration of Bryant from decades ago.']}
+            srcs={[selfPortraitImage]} 
+            alts={['Crayon illustration of Bryant from decades ago.']} 
           />
         </div>
       )}
@@ -329,7 +323,7 @@ export function ComputerTerminal() {
             {slide !== 'intro' && (
             <div
               className={`absolute
-                text-[max(0.7em,16px)]
+                text-[max(1em,16px)]
                 right-0
                 top-0
                 z-[-1]
@@ -341,9 +335,9 @@ export function ComputerTerminal() {
                   setSlide('intro');
                 }}
                 delay={500}
-                className="font-mono"
+                className="font-thai text-[#00e3ff] "
               >
-                {breakpoints.about ? 'BACK_TO_MENU' : 'BACK'}
+                {breakpoints.about ? 'ไปหน้าหลัก' : 'ย้อนกลับ'}
               </TerminalButton>
             </div>
             )}

@@ -43,6 +43,7 @@ module.exports = {
       mono: '"Roboto Mono", monospace',
       sans: '"Roboto", sans-serif',
       display: '"Bryant", Comic Sans MS',
+      thai: '"Kanit", sans-serif',
     },
   },
 

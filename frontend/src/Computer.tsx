@@ -95,7 +95,7 @@ export function Computer() {
         size={5}
         position={[-1, 0.05, 1.7]}
         lineWidth={1}
-        color={new Color(0xffff00)}
+        color={new Color(0xba6edd)} // ม้วง
         rotation={[Math.PI, 0, -Math.PI / 15]}
         visible={computerFillVisible}
         curved
@@ -108,7 +108,22 @@ export function Computer() {
         size={3.3}
         position={[-1, 0.7, 2.1]}
         lineWidth={0.6}
-        color={computerOn ? new Color(colors.blue) : new Color('darkblue')}
+        color={computerOn ? new Color(0x22222) : new Color(0x22222)}
+        rotation={[Math.PI, 0, -Math.PI / 15]}
+        visible={computerScreenVisible}
+        curved
+        nPointsInCurve={700}
+        scale={computerPartScale}
+        closed
+        depthTest={false}
+        renderOrder={1}
+      />
+      <Scribble
+        points={(computerScreenPoints as CoordArray[])}
+        size={3}
+        position={[-1, 0.7, 2.1]}
+        lineWidth={0.6}
+        color={computerOn ? new Color(0x696969) : new Color(0x696969)}
         rotation={[Math.PI, 0, -Math.PI / 15]}
         visible={computerScreenVisible}
         curved
@@ -123,7 +138,7 @@ export function Computer() {
         size={4.9}
         position={[-1, 0, 2.3]}
         lineWidth={0.02}
-        color={new Color(0xff00ff)}
+        color={new Color(0x7dee29)} //  สีเขียว
         rotation={[Math.PI, 0, -Math.PI / 15]}
         visible={computerBodyVisible}
         curved
@@ -137,7 +152,7 @@ export function Computer() {
         size={4.1}
         position={[-0.7, -1.2, 2.5]}
         lineWidth={0.02}
-        color={new Color(0xff00ff)}
+        color={new Color(0x7dee29)} // สีเขียว
         rotation={[Math.PI, 0, -Math.PI / 15]}
         visible={computerKeyboardVisible}
         curved
@@ -151,7 +166,7 @@ export function Computer() {
       <Text
         position={[-1, 0.7, 2.1]}
         rotation={[0, 0, Math.PI / 40]}
-        color="gray"
+        color={new Color(0x00e3ff)} // สีฟ้า
         anchorX="center"
         anchorY="middle"
         fontSize={1.5}

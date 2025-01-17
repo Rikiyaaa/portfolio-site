@@ -1,0 +1,9 @@
+body {
+  @apply no-scrollbar select-none overflow-hidden touch-none transition-colors duration-1000;
+
+  height: calc(100 * var(--vh));
+  background-image: url('/path/to/your-image.jpg'); /* ใส่ URL ของรูปภาพ */
+  background-size: cover; /* ทำให้รูปภาพครอบคลุมพื้นที่ทั้งหมด */
+  background-position: center; /* จัดกึ่งกลางรูปภาพ */
+  background-repeat: no-repeat; /* ป้องกันการซ้ำของรูปภาพ */
+}

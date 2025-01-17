@@ -5,6 +5,7 @@
   font-style: normal;
 }
 
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -23,9 +24,26 @@
 } */
 
 body {
-  @apply no-scrollbar select-none overflow-hidden touch-none bg-white transition-colors duration-1000;
-
+  @apply no-scrollbar select-none overflow-hidden touch-none bg-[#000000] transition-colors duration-1000;
   height: calc(100 * var(--vh));
+  position: relative;
+}
+
+body::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(24, 14, 27, 0.5); /* Optional: Adds a dim background */
+  filter: blur(45px); /* Adjust blur amount */
+  z-index: -1; /* Ensure this is behind content */
+  border-radius: 50%; /* Optional: Creates circular blur */
+}
+.container {
+  position: relative;
+  z-index: 1; /* Content stays above blur effect */
 }
 
 /* Global focus style */

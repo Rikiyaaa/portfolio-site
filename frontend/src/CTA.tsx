@@ -16,46 +16,42 @@ import TwitterIconSvg from './svg/TwitterIconSvg';
 const ctas = [
   null,
   null,
-  'avail 4 freelance!',
+  'ตรง นี้ กด ได้ นะ!',
   null,
   null,
-  'avail 4 freelance!',
+  'ตรง นี้ กด ได้ นะ!',
   null,
   null,
-  'wow so clickable',
-  'much convert',
+  'กิดกอน.เอ็กซ์วายแซด',
+  'กิดกอน.เอ็กซ์วายแซด',
   null,
   null,
-  'avail 4 freelance!',
+  'ตรง นี้ กด ได้ นะ!',
   null,
   null,
-  'this is my CTA',
-  'i hope you like it',
+  'สีเยอะเกินไปมั้ยนะ',
+  'สีเยอะเกินไปมั้ยนะ',
   null,
   null,
-  'trying to strike',
-  'a self-aware tone with it',
-  'but still have it work',
-  'ya know?',
+  'รู้สึกเเสบตารึป่าว',
+  'ลองล้มเเก้วดูสิ!',
+  'ลองล้มเเก้วดูสิ!',
+  'คุณ รู้ อะ ไร มั้ย?',
   null,
   null,
-  'are the colors too much?',
-  'how bout the hover state?',
+  'ลองล้มเเก้วดูสิ!',
+  'เเอบมองเธออยู่นะจ๊ะ',
   null,
   null,
-  'ngl, very outta',
-  'my comfort zone',
-  'to self-promote',
-  'lolololol',
+  'รู้สึกเหมือนมีคนส่อง',
+  '5555555555555555',
   null,
   null,
-  'feels sorta like',
-  'selling peanuts',
-  'at a ballgame',
-  "but I'M THE PEANUTS",
-  '"webdev!"',
-  '"get your webdev, here!"',
-  '"webdeeeeeev!"',
+  'มารู้จักกันเถอะ',
+  'ชื่อ "กิดกอน" นะ',
+  '"กิดกอนนน!"',
+  null,
+  null,
 ];
 
 export const useShowCtas = () => {
@@ -137,7 +133,7 @@ export const CTA = () => {
         {hover &&
           `
           body {
-            background: black !important;
+            background: white !important;
           }
         `}
       </style>
@@ -151,7 +147,7 @@ export const CTA = () => {
           target="_blank"
           rel="noreferrer"
           className={`
-            block fixed top-0 left-0 text-[min(4vw,1.3rem)]  pr-[1rem] py-[1rem] font-mono tracking-wide pl-[0.5em]
+            block fixed top-0 left-0 text-[min(4vw,1.5rem)]  pr-[1rem] py-[1rem] font-thai tracking-wide pl-[0.6em]
             ${showStats ? '' : 'z-[88888888]'}
             ${showCTAs ? '' : 'translate-y-[-200%]'} transition-all duration-300
             ${hover ? 'scale-[1.3]' : ''}  origin-top-left
@@ -186,7 +182,7 @@ export const CTA = () => {
       </CustomCursorHover>
       <nav
         className={`
-          block fixed bottom-0 right-0 text-[min(4vw,1.3rem)]  pr-[1rem] py-[1rem] font-mono tracking-wide pl-[0.5em]
+          block fixed bottom-0 right-0 text-[min(4vw,1.3rem)]  pr-[1rem] py-[1rem] font-thai tracking-wide pl-[0.5em]
           ${showCTAs ? '' : 'translate-y-[200%]'} transition-all duration-300
           z-[88888888]
           ${hover ? 'scale-[1.3]' : ''} origin-bottom-right
@@ -217,10 +213,10 @@ export const CTA = () => {
       </nav>
       {showBg && (
         <div
-          className="top-0 left-0 fixed w-full h-full overflow-hidden z-[-1] text-[2vw] font-mono text-white break-all opacity-30"
+          className="top-0 left-0 fixed w-full h-full overflow-hidden z-[-1] text-[2vw] font-thai text-black break-all opacity-30"
           aria-hidden
         >
-          {new Array(2000).fill(null).map(() => 'hi!')}
+          {new Array(2000).fill(null).map(() => 'ดีจ้า! ')}
         </div>
       )}
     </>
